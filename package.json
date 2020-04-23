@@ -1,0 +1,27 @@
+{
+  "name": "mini-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c0710/mini-react.git"
+  },
+  "author": "Evannn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c0710/mini-react/issues"
+  },
+  "homepage": "https://github.com/c0710/mini-react#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}
