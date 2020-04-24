@@ -4,6 +4,7 @@ function render (vnode, container) {
     return container.appendChild( _render( vnode ) );
 }
 
+// 将vnode转为真实Dom
 function _render( vnode ) {
 
     if ( vnode === undefined || vnode === null || typeof vnode === 'boolean' ) vnode = '';
@@ -68,6 +69,7 @@ function setAttribute( dom, name, value ) {
     }
 }
 
+// 渲染组件
 function renderComponent (component) {
     let base;
     // 是否是组件初次渲染

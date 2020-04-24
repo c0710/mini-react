@@ -1,6 +1,4 @@
-import {
-    renderComponent
-} from "./react-dom";
+import ReactDom from './react-dom';
 
 
 function createElement(tag, attrs, ...children) {
@@ -23,7 +21,7 @@ class Component {
         Object.assign(this.state, stateChange)
 
         // 重新渲染组件
-        renderComponent(this)
+        ReactDom.renderComponent(this)
     }
 
     componentWillMount() {
