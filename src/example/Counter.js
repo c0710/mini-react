@@ -8,12 +8,25 @@ export default class Counter extends React.Component {
         }
     }
 
+
     componentWillUpdate() {
         console.log( 'update' );
     }
 
     componentWillMount() {
         console.log( 'mount' );
+    }
+
+    componentDidMount() {
+        for ( let i = 0; i < 100; i++ ) {
+            this.setState(prevState => {
+                console.log( prevState.num );
+                return {
+                    num: prevState.num + 1
+                }
+            } );
+            console.log( this.state.num ); 
+        }
     }
 
     onClick() {
